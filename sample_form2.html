@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Welcome to GC</title>
+  </head>
+  <body>
+    <h1>Gamers Class Signup form</h1>
+    <form action="https://gamerzclass.com/" method="get" target="_blank">
+      <fieldset>
+        <legend>
+          <img
+            src="./gamersclass.png"
+            alt="logo"
+            height="200px"
+            width="200px"
+          />
+        </legend>
+        <label for="name">FirstName</label>
+        <input
+          minlength="5"
+          maxlength="15"
+          class="name"
+          type="search"
+          name="first"
+          id="un"
+          autofocus
+          required
+          placeholder="Ceeeeeeeeeeeeeeeb"
+        />
+        <label for="lastname" style="margin-left: 20px">LastName:</label>
+        <input type="search" name="last" id="lastname" required />
+        <label for="birth" style="margin-left: 110px"
+          >When'd you start gaming?</label
+        >
+        <input type="date" name="birth" id="birth" required />
+        <br />
+        <br />
+        <label for="email" style="margin-top: 20px">Email:</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          required
+          maxlength="100"
+          placeholder="example@gmail.com"
+        />
+        <label style="margin-left: 20px" for="number">Phone number:</label>
+        <input type="number" name="phonenum" id="number" required value="+98" />
+        <br /><br />
+        <label for="gender"
+          >what should we call you <br />
+          <label for="male" style="margin-left: 20px">male</label>
+          <input type="checkbox" name="gen" id="male" value="male" />
+          <label for="female" style="margin-left: 15px">Female</label>
+          <input type="radio" name="gen" id="female" value="female" />
+          <label for="other" style="margin-left: 30px">You tell us</label>
+          <input type="search" name="gen" id="other" />
+        </label>
+        <br /><br />
+        <label for="Games" style="margin-left: 20px">Chose a game:</label>
+        <select name="" id="games">
+          <option value="" selected disabled>Select!</option>
+          <optgroup label="MMO RPG">
+            <option value="ِdota">Dota2</option>
+            <option value="ِlol">League of legends</option>
+            <option value="sc">Star craft</option>
+          </optgroup>
+          <optgroup label="Shooter">
+            <option value="csgo">Counter Srike</option>
+            <option value="halo">HALO</option>
+            <option value="fortnite">Fortnite</option>
+          </optgroup>
+        </select>
+        <br /><br />
+        <label for="address">Put address in</label>
+        <textarea name="address" id="address" cols="110"></textarea>
+        <br /><br />
+        <label for="idpic" style="margin-left: 20px">upload your id</label>
+        <input type="file" name="idpic" id="idpic" />
+        <br /><br />
+        <label for="courses" style="margin-left: 5px"
+          >Select what you want to learn</label
+        ><br />
+        <label for="early" style="margin-left: 10px">4-8</label>
+        <input type="radio" name="h" id="early" value="early" />
+        <label for="midearly" style="margin-left: 10px">8-12</label>
+        <input type="radio" name="h" id="midearly" value="midearly" />
+        <label for="mid" style="margin-left: 10px">12-16</label>
+        <input type="radio" name="h" id="mid" />
+        <label for="late" style="margin-left: 10px">16-20</label>
+        <input type="radio" name="h" id="late" />
+        20-24
+      </fieldset>
+      <hr />
+      <button type="submit" style="margin: 10px 30px">Lets Go!</button>
+      <button type="reset">Reset</button>
+    </form>
+    <label for="rate">rate us!</label>
+    <input type="range" id="range" max="5" min="1" step="1" /> <br /><br />
+  </body>
+</html>
